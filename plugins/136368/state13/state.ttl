@@ -1,0 +1,61 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <http://kunz.corrupt.ch/products/tal-noisemaker> ;
+	state:state [
+		<urn:juce:stateString> """<?xml version="1.0" encoding="UTF-8"?>
+
+<tal curprogram="0" version="1.6999999999999999556">
+  <programs>
+    <program programname="! Startup Juno Osc TAL" volume="0.62800002098083496094"
+             filtertype="0" cutoff="0.27600002288818359375" resonance="0.41600000858306884766"
+             osc1volume="0.78800004720687866211" osc2volume="0.75200003385543823242"
+             osc3volume="0" osc1waveform="0.5" osc2waveform="0" oscsync="0"
+             oscmastertune="0.5" osc1tune="0" osc2tune="0" osc1finetune="0.5"
+             osc2finetune="0.5" portamento="0" keyfollow="0" filtercontour="0.75600004196166992188"
+             filterattack="0" filterdecay="0.26000002026557922363" filtersustain="0.30000001192092895508"
+             filterrelease="0" ampattack="0.21200001239776611328" ampdecay="0.33600002527236938477"
+             ampsustain="0.21600000560283660889" amprelease="0.42400002479553222656"
+             voices="0.20000000298023223877" portamentomode="0" lfo1waveform="0"
+             lfo2waveform="0" lfo1rate="0" lfo2rate="0" lfo1amount="0.5" lfo2amount="0.5"
+             lfo1destination="0" lfo2destination="0" lfo1phase="0" lfo2phase="0"
+             osc1pw="0.79600006341934204102" osc2fm="0" osc1phase="0.47200003266334533691"
+             osc2phase="0.51200002431869506836" transpose="0.5" freeadattack="0"
+             freeaddecay="0" freeadamount="0" freeaddestination="0" lfo1sync="0"
+             lfo1keytrigger="0" lfo2sync="0" lfo2keytrigger="0" velocityvolume="0"
+             velocitycontour="0" velocitycutoff="0" pitchwheelcutoff="0" pitchwheelpitch="0"
+             highpass="0" detune="0" vintagenoise="0" ringmodulation="0" chorus1enable="0"
+             chorus2enable="0" reverbwet="0" reverbdecay="0.5" reverbpredelay="0"
+             reverbhighcut="0" reverblowcut="1" oscbitcrusher="1" filterdrive="0"
+             delaywet="0" delaytime="0.5" delaysync="0" delayfactorl="0" delayfactorr="0"
+             delayhighshelf="0" delaylowshelf="0" delayfeedback="0.5" envelopeeditordest1="0"
+             envelopeeditorspeed="0" envelopeeditoramount="0" envelopeoneshot="0"
+             envelopefixtempo="0" tab1open="1" tab2open="1" tab3open="0" tab4open="0">
+      <splinePoints>
+        <splinePoint isStartPoint="1" isEndPoint="0" centerPointX="0" centerPointY="1"
+                     controlPointLeftX="0" controlPointLeftY="1" controlPointRightX="0.10000000149011611938"
+                     controlPointRightY="1"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.1925925910472869873"
+                     centerPointY="1" controlPointLeftX="0.092592626810073852539"
+                     controlPointLeftY="1" controlPointRightX="0.29259252548217773438"
+                     controlPointRightY="1"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.80185186862945556641"
+                     centerPointY="1" controlPointLeftX="0.70185184478759765625" controlPointLeftY="1"
+                     controlPointRightX="0.90185189247131347656" controlPointRightY="1"/>
+        <splinePoint isStartPoint="0" isEndPoint="1" centerPointX="1" centerPointY="1"
+                     controlPointLeftX="0.89999997615814208984" controlPointLeftY="1"
+                     controlPointRightX="1" controlPointRightY="1"/>
+      </splinePoints>
+    </program>
+  </programs>
+</tal>
+"""
+	] .
+

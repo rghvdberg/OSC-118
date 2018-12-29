@@ -1,0 +1,51 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/sisco#Stereo> ;
+	state:state [
+		<http://gareus.org/oss/lv2/sisco#ui_state_chn> [
+			a atom:Vector ;
+			atom:childType atom:Float ;
+			rdf:value (
+				"1.0"^^xsd:float
+				"0.0"^^xsd:float
+				"0.0"^^xsd:float
+				"3.0"^^xsd:float
+				"1.0"^^xsd:float
+				"0.0"^^xsd:float
+				"0.0"^^xsd:float
+				"3.0"^^xsd:float
+			)
+		] ;
+		<http://gareus.org/oss/lv2/sisco#ui_state_grid> "10"^^xsd:int ;
+		<http://gareus.org/oss/lv2/sisco#ui_state_trig> [
+			a atom:Vector ;
+			atom:childType atom:Float ;
+			rdf:value (
+				"0.0"^^xsd:float
+				"0.0"^^xsd:float
+				"50.0"^^xsd:float
+				"0.5"^^xsd:float
+				"0.0"^^xsd:float
+			)
+		] ;
+		<http://gareus.org/oss/lv2/sisco#ui_state_curs> [
+			a atom:Vector ;
+			atom:childType atom:Int ;
+			rdf:value (
+				"160"^^xsd:int
+				"480"^^xsd:int
+				"1"^^xsd:int
+				"1"^^xsd:int
+			)
+		] ;
+		<http://gareus.org/oss/lv2/sisco#ui_state_misc> "0"^^xsd:int
+	] .
+
